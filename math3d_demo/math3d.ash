@@ -27,6 +27,8 @@ managed struct Matrix {
   
   import Matrix* Clone();
   
+  import bool isEqual(Matrix* m);
+  
   import Matrix* Add(Matrix* m);
   import Matrix* Sub(Matrix* m);
   import Matrix* Mul(Matrix* m);
