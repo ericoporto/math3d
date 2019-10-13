@@ -20,6 +20,9 @@ managed struct Matrix {
   import float Get(int row, int column);
   import static Matrix* Create(int rows,  int columns,  MatrixType type=0,  float value=0);
   
+  import readonly attribute String AsString;
+  import String get_AsString(); // $AUTOCOMPLETEIGNORE$
+  
   import static Matrix* CreateFromString(String s);
   
   import Matrix* Clone();
