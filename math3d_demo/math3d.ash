@@ -6,6 +6,9 @@ enum MatrixType {
   eMT_Identity=1, 
 };
 
+import String[] Split(this String*, String token);
+import int CountToken(this String*, String token);
+
 managed struct Matrix {
   float v[MAX_CELL_COUNT];
   
@@ -17,6 +20,8 @@ managed struct Matrix {
   import float Get(int row, int column);
   import static Matrix* Create(int rows,  int columns,  MatrixType type=0,  float value=0);
   
+  import static Matrix* CreateFromString(String s);
+  
   import Matrix* Clone();
   
   import Matrix* Add(Matrix* m);
@@ -26,6 +31,8 @@ managed struct Matrix {
   import Matrix* DivNum(float f);
   import Matrix* Pow(int n);
   import float Determinant();
+  import float MaxCell();
+  import float MinCell();
 };
 
 managed struct Vec3;

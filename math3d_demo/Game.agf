@@ -3,8 +3,8 @@
 <AGSEditorDocument Version="3.0.3.2" VersionIndex="21" EditorVersion="3.5.0">
   <Game>
     <Settings>
-      <GameFileName xml:space="preserve">Empty Game</GameFileName>
-      <GameName>math3d</GameName>
+      <GameFileName>math3d_demo</GameFileName>
+      <GameName>math3d_demo</GameName>
       <UniqueID>5297522</UniqueID>
       <GUIDAsString>{a86a0e5c-d8ec-4676-a265-35ffc749e1be}</GUIDAsString>
       <ColorDepth>TrueColor</ColorDepth>
@@ -75,14 +75,14 @@
       <DeveloperURL />
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
-      <SaveGameFolderName>math3d</SaveGameFolderName>
+      <SaveGameFolderName>math3d_demo</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
       <AudioIndexer>0</AudioIndexer>
-      <BuildTargets>Windows</BuildTargets>
+      <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
     <RuntimeSetup>
-      <GraphicsDriver>D3D9</GraphicsDriver>
+      <GraphicsDriver>OpenGL</GraphicsDriver>
       <Windowed>False</Windowed>
       <FullscreenGameScaling>ProportionalStretch</FullscreenGameScaling>
       <GameScaling>MaxInteger</GameScaling>
