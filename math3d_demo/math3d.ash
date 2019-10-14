@@ -6,8 +6,10 @@ enum MatrixType {
   eMT_Identity=1,
 };
 
+import float Abs(float f);
 import String[] Split(this String*, String token);
 import int CountToken(this String*, String token);
+
 
 managed struct Matrix {
   float v[MAX_CELL_COUNT];

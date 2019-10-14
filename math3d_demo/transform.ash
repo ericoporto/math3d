@@ -33,6 +33,7 @@ managed struct Transform {
 
   import Quat* DoTransform(float px, float py, float pz, float pw);
   import Quat* DoTransformQuat(Quat* q);
+  import Transform* Invert44();
   import Transform* SetIdentity();
   import Transform* SetTranslate(float x, float y, float z);
   import Transform* SetScale(float x, float y, float z);
