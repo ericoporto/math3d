@@ -1,9 +1,9 @@
 // new module header
-#define MAX_CELL_COUNT 32
+#define MAX_CELL_COUNT 16
 
 enum MatrixType {
-  eMT_None=0,   
-  eMT_Identity=1, 
+  eMT_None=0,
+  eMT_Identity=1,
 };
 
 import String[] Split(this String*, String token);
@@ -11,24 +11,24 @@ import int CountToken(this String*, String token);
 
 managed struct Matrix {
   float v[MAX_CELL_COUNT];
-  
+
   int row_count;
   int column_count;
   int cell_count;
-  
+
   import Matrix* Set(int row, int column, float value);
   import float Get(int row, int column);
   import static Matrix* Create(int rows,  int columns,  MatrixType type=0,  float value=0);
-  
+
   import readonly attribute String AsString;
   import String get_AsString(); // $AUTOCOMPLETEIGNORE$
-  
+
   import static Matrix* CreateFromString(String s);
-  
+
   import Matrix* Clone();
-  
+
   import bool isEqual(Matrix* m);
-  
+
   import Matrix* Add(Matrix* m);
   import Matrix* Sub(Matrix* m);
   import Matrix* Mul(Matrix* m);
@@ -52,7 +52,7 @@ managed struct Quat {
 
   import readonly attribute String AsString;
   import String get_AsString(); // $AUTOCOMPLETEIGNORE$
-  
+
   import readonly attribute Vec3* AsVec3;
 
   import Quat* Set(float x=0, float y=0, float  z=0, float  w=0);
@@ -80,9 +80,9 @@ managed struct Quat {
   import float Angle(Quat* v);
 
   import Quat* Lerp(Quat* v,  float t);
-  
+
   import Quat* setAngleAxis(float angle);
-  
+
   import Quat* getAngleAxis();
 };
 
@@ -95,7 +95,7 @@ managed struct Vec3 {
 
   import readonly attribute String AsString;
   import String get_AsString(); // $AUTOCOMPLETEIGNORE$
-  
+
   import readonly attribute Quat* AsQuat;
 
   import Vec3* Set(float x=0, float y=0, float  z=0);

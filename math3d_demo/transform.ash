@@ -1,11 +1,38 @@
 // new module header
+
+
 managed struct Transform {
-  int ID;
-  
-  import attribute Matrix* m;
-  
-  import static Transform* CreateM44();
-  import Transform* DoTransform(float px, float py, float pz, float pw);
+  float v[MAX_CELL_COUNT];
+
+  int row_count;
+  int column_count;
+  int cell_count;
+
+  import Transform* Set(int row, int column, float value);
+  import float Get(int row, int column);
+  import static Transform* Create();
+
+  import readonly attribute String AsString;
+  import String get_AsString(); // $AUTOCOMPLETEIGNORE$
+
+  import static Transform* CreateFromString(String s);
+
+  import Transform* Clone();
+
+  import bool isEqual(Transform* m);
+
+  import Transform* Add(Transform* m);
+  import Transform* Sub(Transform* m);
+  import Transform* Mul(Transform* m);
+  import Transform* MulNum(float f);
+  import Transform* DivNum(float f);
+  import Transform* Pow(int n);
+  import float Determinant();
+  import float MaxCell();
+  import float MinCell();
+
+  import Quat* DoTransform(float px, float py, float pz, float pw);
+  import Quat* DoTransformQuat(Quat* q);
   import Transform* SetIdentity();
   import Transform* SetTranslate(float x, float y, float z);
   import Transform* SetScale(float x, float y, float z);
