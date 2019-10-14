@@ -1438,6 +1438,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>viewport.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1043298025</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>viewport.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1043298025</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>GlobalScript.ash</FileName>
                 <Name />
                 <Description />
