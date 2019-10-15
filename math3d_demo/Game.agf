@@ -651,7 +651,402 @@
     <GUIs>
       <GUIFolder Name="Main">
         <SubFolders />
-        <GUIs />
+        <GUIs>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>200</Height>
+              <Width>80</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>True</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>2</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>8</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>0</ID>
+              <Name>gCamDebug</Name>
+            </NormalGUI>
+            <Controls>
+              <GUISlider>
+                <OnChange>sld_cam_x_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>8</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>sld_cam_x</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">x 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>10</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>label_cam_x</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUISlider>
+                <OnChange>sld_cam_y_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>26</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>sld_cam_y</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">y 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>28</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>label_cam_y</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">z 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>3</Left>
+                <Top>46</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>label_cam_z</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUISlider>
+                <OnChange>sld_cam_sx_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>68</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name>sld_cam_sx</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>51192</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">x 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>68</Top>
+                <ZOrder>6</ZOrder>
+                <ID>6</ID>
+                <Name>label_cam_sx</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUISlider>
+                <OnChange>sld_cam_sy_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>86</Top>
+                <ZOrder>7</ZOrder>
+                <ID>7</ID>
+                <Name>sld_cam_sy</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>51192</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">y 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>86</Top>
+                <ZOrder>8</ZOrder>
+                <ID>8</ID>
+                <Name>label_cam_sy</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUISlider>
+                <OnChange>sld_cam_z_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>45</Top>
+                <ZOrder>9</ZOrder>
+                <ID>9</ID>
+                <Name>sld_cam_z</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUISlider>
+                <OnChange>sld_cam_sz_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>104</Top>
+                <ZOrder>10</ZOrder>
+                <ID>10</ID>
+                <Name>sld_cam_sz</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>51192</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">y 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>104</Top>
+                <ZOrder>11</ZOrder>
+                <ID>11</ID>
+                <Name>label_cam_sz</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUISlider>
+                <OnChange>sld_cam_rx_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>126</Top>
+                <ZOrder>12</ZOrder>
+                <ID>12</ID>
+                <Name>sld_cam_rx</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUISlider>
+                <OnChange>sld_cam_ry_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>144</Top>
+                <ZOrder>13</ZOrder>
+                <ID>13</ID>
+                <Name>sld_cam_ry</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUISlider>
+                <OnChange>sld_cam_rz_OnChange</OnChange>
+                <HandleImage>0</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>0</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>10</MaxValue>
+                <Value>0</Value>
+                <Height>9</Height>
+                <Locked>False</Locked>
+                <Width>39</Width>
+                <Left>37</Left>
+                <Top>163</Top>
+                <ZOrder>14</ZOrder>
+                <ID>14</ID>
+                <Name>sld_cam_rz</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUISlider>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65055</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">x 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>127</Top>
+                <ZOrder>15</ZOrder>
+                <ID>15</ID>
+                <Name>label_cam_rx</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65055</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">y 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>144</Top>
+                <ZOrder>16</ZOrder>
+                <ID>16</ID>
+                <Name>label_cam_ry</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>65055</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">y 121</Text>
+                <Height>13</Height>
+                <Locked>False</Locked>
+                <Width>35</Width>
+                <Left>2</Left>
+                <Top>163</Top>
+                <ZOrder>17</ZOrder>
+                <ID>17</ID>
+                <Name>label_cam_rz</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>200</Height>
+              <Width>240</Width>
+              <Left>80</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>True</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>1</ID>
+              <Name>gGUIDebug</Name>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>Right</TextAlignment>
+                <TextColor>65535</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>200</Height>
+                <Locked>False</Locked>
+                <Width>240</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>label_debug</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+        </GUIs>
       </GUIFolder>
     </GUIs>
     <InventoryItems>
@@ -868,6 +1263,246 @@
               <Event Index="7" />
             </Interactions>
           </Character>
+          <Character>
+            <ID>1</ID>
+            <ScriptName>cGrass1</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>2</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>74</StartX>
+            <StartY>48</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>2</ID>
+            <ScriptName>cGrass2</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>2</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>188</StartX>
+            <StartY>53</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>3</ID>
+            <ScriptName>cGrass3</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>2</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>85</StartX>
+            <StartY>139</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>4</ID>
+            <ScriptName>cGrass4</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>2</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>213</StartX>
+            <StartY>121</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>5</ID>
+            <ScriptName>cGrass5</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>2</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>166</StartX>
+            <StartY>159</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>6</ID>
+            <ScriptName>cBlock</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>3</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>1</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>True</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <DiagonalLoops>True</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
         </Characters>
       </CharacterFolder>
     </Characters>
@@ -884,7 +1519,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -896,7 +1531,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -908,7 +1543,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -920,7 +1555,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>True</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -932,7 +1567,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -944,7 +1579,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -956,7 +1591,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -968,7 +1603,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -980,7 +1615,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -992,7 +1627,7 @@
         <HotspotX>0</HotspotX>
         <HotspotY>0</HotspotY>
         <StandardMode>False</StandardMode>
-        <Image>0</Image>
+        <Image>85</Image>
         <View>0</View>
         <Animate>False</Animate>
         <AnimateOnlyOnHotspots>False</AnimateOnlyOnHotspots>
@@ -1298,7 +1933,1038 @@
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
-        <SubFolders />
+        <SubFolders>
+          <SpriteFolder Name="tiles">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="1" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="3" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="4" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="5" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="6" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="7" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="8" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="9" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="10" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="11" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="12" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="13" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="14" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="15" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="16" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="17" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="18" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="19" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="20" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="21" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="22" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="23" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="24" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="25" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="26" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="27" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="28" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>16</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="29" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="30" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="31" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="32" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="33" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="34" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="35" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="36" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="37" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="38" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="39" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="40" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="41" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="42" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>32</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="43" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="44" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="45" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="46" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="47" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="48" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="49" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="50" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="51" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="52" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="53" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="54" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="55" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="56" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>48</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="57" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="58" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="59" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="60" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="61" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="62" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="63" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="64" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="65" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="66" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="67" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="68" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="69" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="70" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>64</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="71" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="72" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>16</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="73" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>32</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="74" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>48</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="75" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>64</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="76" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>80</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="77" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>96</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="78" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>112</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="79" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>128</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="80" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>144</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="81" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>160</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="82" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>176</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="83" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>192</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="84" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/TileSet_Gras_Works.png</FileName>
+                  <OffsetX>208</OffsetX>
+                  <OffsetY>80</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="cursor">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="85" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursor/cursor_pointer.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+        </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="1" Height="1" ColorDepth="8" Resolution="Real" AlphaChannel="False">
             <Source>
@@ -1377,12 +3043,110 @@
               </Loop>
             </Loops>
           </View>
+          <View>
+            <ID>2</ID>
+            <Name>vGrass</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>43</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>3</ID>
+            <Name>vBlock</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>37</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>-1</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
         </Views>
       </ViewFolder>
     </Views>
-    <DeletedViews>
-      <ViewID>2</ViewID>
-    </DeletedViews>
+    <DeletedViews />
     <Scripts>
       <ScriptFolder Name="Main">
         <SubFolders />
