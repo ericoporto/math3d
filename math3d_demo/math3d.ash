@@ -163,16 +163,22 @@ managed struct Matrix {
   /// Returns a identity matrix, as a new matrix. Has to be a 4x4 matrix. 
   import Matrix* M44_SetIdentity();
 
+  /// Returns copy of current matrix with translate set to passed position. Has to be a 4x4 matrix. 
   import Matrix* M44_SetTranslate(float x, float y, float z);
 
+  /// Returns copy current matrix with set scaling. Has to be a 4x4 matrix. 
   import Matrix* M44_SetScale(float x, float y, float z);
 
+  /// Returns copy current matrix with rotate set as passed. Has to be a 4x4 matrix. 
   import Matrix* M44_SetRotateEuler(float x, float y, float z);
 
+  /// Returns copy current matrix with translate, rotate and scale set as passed. Has to be a 4x4 matrix. 
   import Matrix* M44_SetFullTransform(float x, float y, float z, float sx, float sy, float sz, float rx, float ry, float rz);
 
+  /// Returns orthographic projection matrix with passed parameters. Has to be a 4x4 matrix.
   import Matrix* M44_SetOrthographicProjection(float left, float right, float bottom, float top, float near, float far);
 
+  /// Returns perspective projection matrix with passed parameters. Has to be a 4x4 matrix.
   import Matrix* M44_SetPerspectiveProjection(float fovx, float fovy, float near, float far);
 };
 
