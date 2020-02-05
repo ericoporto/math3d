@@ -11,6 +11,7 @@ Where T is a transformation matrix.
 The 4x4 transformation matrix can be partitioned in four separate sections
 
 [ 3x3 ][ 3x1 ]
+
 [ 1x3 ][ 1x1 ]
 
 The upper left 3x3 submatrix produces a linear transformation in the form of scaling, shearing, reflection and rotation.
