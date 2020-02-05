@@ -19,12 +19,6 @@ The 4x4 transformation matrix can be partitioned in four separate sections
 - The upper right 3x1 submatrix produces a perspective transformation.
 - The final lower right hand 1x1 submatrix produces overall scaling.
 
-## NOTES The
-
-- create a matrix stack
-- add functions for vec3*m44 and Quat*m44.
-- get vec3 as 1by4 matrix, do the same for Quat
-
 ## Concepts
 
 ### Homogeneous Coordinates
