@@ -14,10 +14,10 @@ The 4x4 transformation matrix can be partitioned in four separate sections
 
 [ 1x3 ][ 1x1 ]
 
-The upper left 3x3 submatrix produces a linear transformation in the form of scaling, shearing, reflection and rotation.
-The lower left 1x3 submatrix produces translation.
-The upper right 3x1 submatrix produces a perspective transformation.
-The final lower right hand 1x1 submatrix produces overall scaling.
+- The upper left 3x3 submatrix produces a linear transformation in the form of scaling, shearing, reflection and rotation.
+- The lower left 1x3 submatrix produces translation.
+- The upper right 3x1 submatrix produces a perspective transformation.
+- The final lower right hand 1x1 submatrix produces overall scaling.
 
 ## NOTES The
 
