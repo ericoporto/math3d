@@ -57,13 +57,13 @@ managed struct Quat {
 
   /// Returns the Euclidean length of the quaternion.
   import readonly attribute float Length;
-
   import float get_Length(); // $AUTOCOMPLETEIGNORE$
+  import float GetLength(); // $AUTOCOMPLETEIGNORE$
 
   /// Returns a normalized copy of this quaternion. Normalize quaternion has length 1 but the same rotation.
   import readonly attribute Quat* Normalize;
-
   import Quat* get_Normalize(); // $AUTOCOMPLETEIGNORE$
+  import Quat* GetNormalize(); // $AUTOCOMPLETEIGNORE$
 
   /// Returns the distance between this quaternion with quaternion q.
   import float Distance(Quat* q);
@@ -240,13 +240,13 @@ managed struct Vec3 {
 
   /// Returns the length (distance to origin) of this vector.  
   import readonly attribute float Length;
-
   import float get_Length(); // $AUTOCOMPLETEIGNORE$
+  import float GetLength();  // $AUTOCOMPLETEIGNORE$
 
   /// Returns a copy of this vector, normalized.
   import readonly attribute Vec3* Normalize;
-
   import Vec3* get_Normalize(); // $AUTOCOMPLETEIGNORE$
+  import Vec3* GetNormalize(); // $AUTOCOMPLETEIGNORE$
 
   /// Returns the distance between this vector and a vector v.
   import float Distance(Vec3* v);
@@ -283,7 +283,8 @@ managed struct Vec3 {
 };
 
 /// Casts a quaternion to a Vec3. You almost never wants to do this.
-import Vec3* get_AsVec3(this Quat*);
+import Vec3* get_AsVec3(this Quat*);  // $AUTOCOMPLETEIGNORE$
+import Vec3* GetAsVec3(this Quat*); // $AUTOCOMPLETEIGNORE$
 
 /// Casts a Vec3 to quaternion. You almost never wants to do this.
 import Quat* get_AsQuat(this Vec3*);
